@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindOkay-Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>MindOkay Blog's</b></h1>
+    <h6><span class="w3-tag">Not until we are lost do we begin to understand ourselves</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="image/img1.jfif" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">MindOkay</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>MENTAL HEALTHBLOG</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3> A Splintered Mind</h3>
+          <h5><span class="w3-opacity">May 12, 2023</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/img5.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong>If you struggle with keeping your thoughts in order</strong>, you likely will appreciate Douglas Cootey’s award-winning ADHD and depression blog. He’s been writing on his mental illness journey since 2005, something that he jokes about is amazing considering he has an attention deficit disorder. Humorous and honest, this is a good blog for anyone who needs to know they’re not alone or a good laugh. </p>
+          <p>“Sometimes I wonder if there’s a support group out there for adults with ADHD who have an open tabs addiction,” he writes in one post. “Hello, my name is Douglas Cootey, and I’m a hard-core tabs junkie.”</p>
+          <p>That isn’t to say his content is all about humor. In his latest blog post, he shares how useless well-meaning advice for depressed or suicidal people really is sometimes. A former bishop of his often changes the subject if he talks about his work or tells him he needs to stop letting his disability define him. “I’m sure he means well, but since I don’t recall him ever taking time to find out how my disability affected me in the first place, his advice is useless to me.”</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">30K</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="image/img9.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Nina <span class="w3-opacity w3-medium">May 12, 2023, 6:32 PM</span></h4>
+                <p>Getting so much positive energy....:></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>The Real Warriors</h3>
+          <h5><span class="w3-opacity">April 23, 2023</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/img8.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong>This blog wants those in the military </strong>to know that asking for help isn’t a sign of weakness, it’s a sign of strength. The Real Warriors is a campaign to encourage active military and veterans to seek mental care and break down the stigma surrounding issues like depression and PTSD, especially in the military.</p>
+          <p>Their Personal Stories section is written by service members across all branches. Topics include advice on how to seek treatment, understanding trauma, and more. We especially appreciated this PSA video on overcoming the stigma around receiving mental health care.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">90K</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>My Brain’s Not Broken</h3>
+          <h5><span class="w3-opacity">April 17, 2023</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/img3.png" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Nathan started this blog in 2017</strong> and hasn’t stopped writing about his journey ever since. He’s struggled with depression 
+          and mental illness since he was 19. After years of research, he made it his mission to create a place to share his story and hear from others.</p>
+          <p>Topics range from dealing with weather-induced mental health to the dangerous idea of “glamorizing” mental health. “I saw my depression as poetic, as necessary for my struggle. The more I lived with depression, the more I would be able to use this pain and do something noteworthy,” he writes. “We treat mental illness as something to overcome or a game to win. That creates an attitude that makes people feel like they need to ‘beat’ mental illness, but never to manage it.”</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">300k</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/boy.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_hood.jpg" style="width:90px;">
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="image/img4.webp" alt="Jane" style="width:100%" >
+        <div class="w3-container w3-black">
+          <h4>Looking after mental health - Tips and advice</h4>
+          <p>Publish your story and share your experience with Mental Health. Read our submission guidelines and voluntarily submit your article to help others. Wellbeing.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="image/img6.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Mind</span>
+            <br>
+            <span>Mind’s goal is to inspire and inform anyone living with a mental illness as well as campaign for services. Their Mind Blog is based in the UK, but their topics are universal.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/img7.jfif" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Time to Change</span>
+            <br>
+            <span>Time to Change isn’t just about blogging. They are part of a social media campaign to reduce the stigma around mental health and encourage honest conversations.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/img11.jfif" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">The Mighty</span>
+            <br>
+            <span>If you want to hear more stories from people facing the same mental health issues you do, the Mighty is a good place to start. </span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/img10.jfif" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Bipolar Bandit</span>
+            <br>
+            <span>Michelle Clark is no stranger to depression and bipolar disorder. She suffered for weeks at a time in high school without knowing why or what she was feeling. </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Your AD Here</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Mental Health</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mental Health Awareness</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">selflove</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Anxiety </span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Therapy</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">positivevibes</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Healthy Life Style</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Psychology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Wellbeing</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Happiness</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Motivation</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bipolar</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mental Health Advocate</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Healing</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="image/img12.png" alt="Healthy Mind" style="width:100%"></p>
+            <p><img src="image/img13.png" alt="Loving Family" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="image/img14.jfif" alt="Love" style="width:79%" ></p>
+            <p><img src="image/img15.jfif" alt="self Love" style="width:79%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">MindOkay</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
